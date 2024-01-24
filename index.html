@@ -24,7 +24,7 @@
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <img alt="logo da pokédex" src="./assets/images/pokedex-logo.png" class="logo" />
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,6 +36,38 @@
             </button>
         </div>
     </section>
+
+    <!-- Pokémon Details Modal-->
+    <section class="pokemonDetails">
+        <section class="content contentDetails">
+            <button class="closeModalBtn" onclick="closeModal(this)">X</button>
+
+            <div class="details">
+                <div class="top">
+                    <div>
+                        <span class="name"></span>
+                        <ol class="types"></ol>
+                    </div>
+
+                    <span class="number">#03</span>
+                </div>
+
+                <div class="image">
+                    <img />
+                </div>
+
+                <div class="bgDetail">
+                    <ol>
+                        <li>
+                            <span>power</span>
+                            <div class="bar"><span></span></div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- -------------------- -->
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
