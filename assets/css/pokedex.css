@@ -214,9 +214,7 @@
 }
 
 .closeModalBtn {
-    position: absolute;
     all: unset;
-    right: 0;
     font-weight: bolder;
     font-size: x-large;
     background-color: #d21d1d;
@@ -227,9 +225,13 @@
     transform: scale(1.1);
     margin-left: .5em;
     margin-top: .5em;
+    align-self: flex-start;
 }
 
 .contentDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     padding: 0 !important;
     color: #fff;
@@ -247,8 +249,6 @@
 .details>div {
     position: relative;
     padding: 1em;
-    padding-bottom: 0;
-    padding-top: 0;
 }
 
 .details>.image::after {
@@ -332,17 +332,12 @@
 }
 
 .bgDetail>ol {
-    display: flex;
-    flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
 .bgDetail>ol>li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em;
+    margin: .7em;
 }
 
 .bgDetail>ol>li>span {
